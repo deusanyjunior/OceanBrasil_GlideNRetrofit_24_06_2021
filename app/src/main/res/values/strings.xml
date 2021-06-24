@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GlideNRetrofit</string>
+    <string name="ivAvatarDescription">Avatar</string>
+    <string name="ivDescricaoAvatar">Avatar do dj</string>
+</resources>
