@@ -48,6 +48,12 @@ class MainActivity : AppCompatActivity() {
                 ) {
                     tvErro.setText("O amor está no ar!!")
                     // Exercicio: Exibir a imagem do owner no ivAvatar
+
+                    // Resposta:
+                    val body = response.body()
+                    body?.get(0).let {
+                        Glide.with(this@MainActivity).load(it?.owner?.avatar_url).into(imageView)
+                    }
                 }
 
                 override fun onFailure(call: Call<List<Repo?>?>, t: Throwable) {
